@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <base target="_blank">
+  <title>Bootstrap导航</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<style type="text/css">
+  body{
+    background: rgb(42, 75, 82);
+    /*background-image: linear-gradient(to right,#a8caba,#5d4157);*/
+    /* background: url("img/bg.jpg") ; */
+    background-size: 100% auto;
+  }
+  .contanier{
+    margin-left: -15px;
+    margin-right: -15px;
+    background: rgb(255,255,255);
+  }
+  .search{
+    margin-top: 100px;
+    border-radius: 20px;
+    background: rgba(255,255,255,1);
+  }
+  .box{
+    margin-top: 50px;
+    border-radius: 10px;
+    background: rgba(255,255,255,1);
+  }
+  .card-div:hover{
+    /*background: rgba(239,239,239,01);*/
+    background-image: linear-gradient(to right bottom,#e8e8e8,#c8c9cb);
+  }
+  .card-div{
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    overflow: hidden;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(249,249,249,1);
+  }
+  .card-img{
+    margin-left: 20px;
+    width: 32px;
+    height: 32px;
+    float: left;
+    display: block;
+  }
+  .card-h{
+    padding-left: 60px;
+    display: block;
+    margin-top: 6px;
+    font-weight: 700;font-size: 15px;
+    color: inherit;
+  }
+  .list-title{
+    font-size: 20px;
+    color: blue;
+  }
+  .list-targe a{
+    font-size: 20px;
+    color: black;
+  }
+  .list-targe a:hover{
+    color: rgb(255,0,0);
+  }
+  hr{
+    margin: 15px 0 15px 0;
+  }
+  .pre-scrollable{
+    max-height: 500px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">推荐导航</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="avtive">
+            <a href="http://hao.wordlm.com/" target="_blank">办公导航</a>
+          </li>
+          <li>
+            <a href="https://search.chongbuluo.com/" target="_blank">虫部落</a>
+          </li>
+          <li>
+            <a href="http://chuangzaoshi.com/" target="_blank">设计师</a>
+          </li>
+          <li>
+            <a href="http://hao.199it.com/" target="_blank">大数据导航</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"  data-toggle="dropdown">更多<span class="glyphicon glyphicon-menu-down"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="http://www.xiaolvji.com/">效率集</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+          </li>
+        </ul>
+      </div>
+    </div> 
+  </nav>
+<br>
+<div class="container">
+  <div class="contanier search">
+    <form action="https://cn.bing.com/search" autocomplete="off" target="_blank">
+      <div class="input-group input-group-lg">
+        <input type="text" placeholder="Search" aria-describedby="basic-addon2" class="form-control" name="q">
+        <div class="input-group-btn">
+          <button class="btn btn-default">Bing</button>
+        </div>
+      </div>
+    </form>
+  </div>
+<br>
+<hr>
+  <div class="container box row">
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.jd.com/">
+        <span><img class="card-img" src="img/jd.png"></span>
+        <span><h3 class="card-h">京东</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.tmall.com/">
+        <span><img class="card-img" src="img/tmall.png"></span>
+        <span><h3 class="card-h">天猫</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.bilibili.com/">
+        <span><img class="card-img" src="img/bilibili.png"></span>
+        <span><h3 class="card-h">哔哩哔哩</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.sojson.com/">
+        <span><img class="card-img" src="img/json.png"></span>
+        <span><h3 class="card-h">Json在线工具</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.lanzous.com/">
+        <span><img class="card-img" src="img/lanzouyun.png"></span>
+        <span><h3 class="card-h">蓝奏云</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://weread.qq.com/">
+        <span><img class="card-img" src="img/weread.png"></span>
+        <span><h3 class="card-h">微信读书</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="http://24mail.chacuo.net/">
+        <span><img class="card-img" src="img/24mail.png"></span>
+        <span><h3 class="card-h">临时邮箱</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.pexels.com/zh-cn/">
+        <span><img class="card-img" src="img/pexels.png"></span>
+        <span><h3 class="card-h">pexels免费素材</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.iconfont.cn/">
+        <span><img class="card-img" src="img/icon.png"></span>
+        <span><h3 class="card-h">阿里图标库</h3></span>
+      </a>
+    </div>
+    <div class="col-md-2 thumbnail card-div">
+      <a href="https://www.bootcss.com/">
+        <span><img class="card-img" src="img/Bootstrap-Logo.png"></span>
+        <span><h3 class="card-h">Bootstrap</h3></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container box row pre-scrollable">
+    <!-- <h2>分类导航</h2> -->
+    <div class="box ">
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">影视</li>
+        <li class="col-md-2 list-targe"><a href="https://www.iqiyi.com/">爱奇艺</a></li>
+        <li class="col-md-2 list-targe"><a href="https://v.qq.com/">腾讯视频</a></li>
+        <li class="col-md-2 list-targe"><a href="https://youku.com/">优酷</a></li>
+        <li class="col-md-2 list-targe"><a href="http://www.guandianzhiku.com/v/s">搜搜Jiexi-vip</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.skypixel.com">天空之城</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">IT互联网</li>
+        <li class="col-md-2 list-targe"><a href="https://www.oschina.net/">开源中国</a></li>
+        <li class="col-md-2 list-targe"><a href="https://github.com/">GitHub</a></li>
+        <li class="col-md-2 list-targe"><a href="https://msdn.itellyou.cn/">MSDN</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.csdn.net/">CSDN</a></li>
+        <li class="col-md-2 list-targe"><a href="">实验楼</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">酷站</li>
+        <li class="col-md-2 list-targe"><a href="http://www.gkbang.cn/link/">果壳任意门</a></li>
+        <li class="col-md-2 list-targe"><a href="https://meiriyiwen.com/">每日一文</a></li>
+        <li class="col-md-2 list-targe"><a href="https://songshuhui.net/">科学松鼠会</a></li>
+        <li class="col-md-2 list-targe"><a href="http://data.stats.gov.cn/">国家数据</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">云课堂</li>
+        <li class="col-md-2 list-targe"><a href="https://open.163.com/">网易公开课</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.icourse163.org/">中国大学MOOC</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.ted.com/">TED</a></li>
+        <li class="col-md-2 list-targe"><a href="https://zh.khanacademy.org/">可汗学院</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.imooc.com/">慕课网</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">Read资源</li>
+        <li class="col-md-2 list-targe"><a href="https://www.jiumodiary.com/">鸠摩搜书</a></li>
+        <li class="col-md-2 list-targe"><a href="http://shuxiangjia.cn/">书享家</a>
+        </li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">资讯</li>
+        <li class="col-md-2 list-targe"><a href="https://www.douban.com/">豆瓣</a></li>
+        <li class="col-md-2 list-targe"><a href="http://www.people.com.cn/">人民网</a></li>
+        <li class="col-md-2 list-targe"><a href="https://www.thepaper.cn/">澎湃</a></li>
+        <li class="col-md-2 list-targe"><a href="hhttp://www.people.com.cn/">人民网</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">在线&工具</li>
+        <li class="col-md-2 list-targe"><a href="https://tool.lu/">工具箱</a></li>
+        <li class="col-md-2 list-targe"><a href="https://tool.oschina.net/">在线工具</a></li>
+        <li class="col-md-2 list-targe"><a href="http://www.alltoall.net/">All To All</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">设计</li>
+        <li class="col-md-2 list-targe"><a href="http://www.51yuansu.com/">觅元素</a></li>
+        <li class="col-md-2 list-targe"><a href="http://www.pptbz.com/">PPT宝藏</a></li>
+      </ul>
+      <hr>
+      <ul class="row list-unstyled">
+        <li class="col-md-2 list-title">备用名称</li>
+        <li class="col-md-2 list-targe"><a href="https://tool.lu/">工具箱</a></li>
+        <li class="col-md-2 list-targe"><a href="https://tool.oschina.net/">在线工具</a></li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+
+</div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
